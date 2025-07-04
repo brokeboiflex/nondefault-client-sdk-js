@@ -2,19 +2,19 @@
   "name": "nondefault-livekit-client",
   "version": "2.15.2",
   "description": "JavaScript/TypeScript client SDK for LiveKit",
-  "main": "./dist/livekit-client.umd.js",
-  "unpkg": "./dist/livekit-client.umd.js",
-  "module": "./dist/livekit-client.esm.mjs",
+  "main": "./dist/nondefault-livekit-client.umd.js",
+  "unpkg": "./dist/nondefault-livekit-client.umd.js",
+  "module": "./dist/nondefault-livekit-client.esm.mjs",
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "import": "./dist/livekit-client.esm.mjs",
-      "require": "./dist/livekit-client.umd.js"
+      "import": "./dist/nondefault-livekit-client.esm.mjs",
+      "require": "./dist/nondefault-livekit-client.umd.js"
     },
     "./e2ee-worker": {
       "types": "./dist/src/e2ee/worker/e2ee.worker.d.ts",
-      "import": "./dist/livekit-client.e2ee.worker.mjs",
-      "require": "./dist/livekit-client.e2ee.worker.js"
+      "import": "./dist/nondefault-livekit-client.e2ee.worker.mjs",
+      "require": "./dist/nondefault-livekit-client.e2ee.worker.js"
     }
   },
   "files": [
@@ -50,7 +50,7 @@
     "format:check": "prettier --check src examples/**/*.ts",
     "ci:publish": "pnpm build && pnpm compat && changeset publish",
     "downlevel-dts": "downlevel-dts ./dist/ ./dist/ts4.2 --to=4.2",
-    "compat": "eslint --no-eslintrc --config ./.eslintrc.dist.cjs ./dist/livekit-client.umd.js",
+    "compat": "eslint --no-eslintrc --config ./.eslintrc.dist.cjs ./dist/nondefault-livekit-client.umd.js",
     "size-limit": "size-limit"
   },
   "dependencies": {
